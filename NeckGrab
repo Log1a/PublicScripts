@@ -1,0 +1,6 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Script is Patched", -- Required
+	Text = "Discord Link copied to Clipboard for Updates", -- Required
+	Icon = "rbxassetid://9191301683" -- Optional
+})
+setclipboard(tostring("https://discord.gg/bWYNbR73fw"))
