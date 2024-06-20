@@ -334,15 +334,7 @@ DropdownContainer.ZIndex = 3
 
 UIListLayout_2.Parent = DropdownContainer
 UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-end 
-function InsideTab:CreateTextBox(placeholderText, callback)
-    local TextBox = Instance.new("TextBox")
-    local TextBoxFrame = Instance.new("ImageLabel")
-@@ -380,337 +43,3 @@ function InsideTab:CreateTextBox(placeholderText, callback)
-        end
-    end)
 end
-
 
 function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     text = text or "Slider"
@@ -361,7 +353,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     local TextButton_Roundify_2px = Instance.new("ImageLabel")
     local SliderInner = Instance.new("ImageLabel")
     local TextLabel_2 = Instance.new("TextLabel")
-
+    
     Slider.Name = "Slider"
     Slider.Parent = Frame
     Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -371,7 +363,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     Slider.Text = text
     Slider.TextColor3 = Color3.fromRGB(255, 255, 255)
     Slider.TextSize = 14.000
-
+    
     Frame_3.Name = "Frame"
     Frame_3.Parent = Slider
     Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -383,7 +375,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     Frame_3.ScaleType = Enum.ScaleType.Slice
     Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
     Frame_3.SliceScale = 0.020
-
+    
     SliderButton.Name = "SliderButton"
     SliderButton.Parent = Slider
     SliderButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -395,7 +387,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     SliderButton.Text = ""
     SliderButton.TextColor3 = Color3.fromRGB(0, 0, 0)
     SliderButton.TextSize = 14.000
-
+    
     TextButton_Roundify_2px.Name = "TextButton_Roundify_2px"
     TextButton_Roundify_2px.Parent = SliderButton
     TextButton_Roundify_2px.Active = true
@@ -410,7 +402,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     TextButton_Roundify_2px.ScaleType = Enum.ScaleType.Slice
     TextButton_Roundify_2px.SliceCenter = Rect.new(100, 100, 100, 100)
     TextButton_Roundify_2px.SliceScale = 0.020
-
+    
     SliderInner.Name = "SliderInner"
     SliderInner.Parent = SliderButton
     SliderInner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -421,7 +413,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     SliderInner.ScaleType = Enum.ScaleType.Slice
     SliderInner.SliceCenter = Rect.new(100, 100, 100, 100)
     SliderInner.SliceScale = 0.020
-
+    
     TextLabel_2.Parent = Slider
     TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_2.BackgroundTransparency = 1.000
@@ -571,8 +563,8 @@ function InsideTab:CreateCheckbox(text,callback)
     local MainCheatFrame = Instance.new("ImageLabel")
     local InsideCheatFrame = Instance.new("ImageLabel")
     local CheatButton = Instance.new("TextButton")
-
-
+    
+    
     Cheat.Name = "Cheat"
     Cheat.Parent = Frame
     Cheat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -582,7 +574,7 @@ function InsideTab:CreateCheckbox(text,callback)
     Cheat.Font = Enum.Font.SourceSansSemibold
     Cheat.TextColor3 = Color3.fromRGB(255, 255, 255)
     Cheat.TextSize = 14.000
-
+    
     MainCheatFrame.Name = "MainCheatFrame"
     MainCheatFrame.Parent = Cheat
     MainCheatFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -594,7 +586,7 @@ function InsideTab:CreateCheckbox(text,callback)
     MainCheatFrame.ScaleType = Enum.ScaleType.Slice
     MainCheatFrame.SliceCenter = Rect.new(100, 100, 100, 100)
     MainCheatFrame.SliceScale = 0.020
-
+    
     InsideCheatFrame.Name = "Frame"
     InsideCheatFrame.Parent = MainCheatFrame
     InsideCheatFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -607,7 +599,7 @@ function InsideTab:CreateCheckbox(text,callback)
     InsideCheatFrame.ScaleType = Enum.ScaleType.Slice
     InsideCheatFrame.SliceCenter = Rect.new(100, 100, 100, 100)
     InsideCheatFrame.SliceScale = 0.020
-
+    
     CheatButton.Parent = MainCheatFrame
     CheatButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     CheatButton.BackgroundTransparency = 1.000
@@ -629,7 +621,7 @@ function InsideTab:CreateCheckbox(text,callback)
         InsideCheatFrame.ImageColor3 = theme2
     end
     end
-
+    
     CheatButton.MouseButton1Click:Connect(triggercheat)
 end
 
@@ -650,7 +642,7 @@ function InsideTab:CreateButton(text, callback)
     Button.Text = text
     Button.TextColor3 = Color3.fromRGB(255, 255, 255)
     Button.TextSize = 14.000
-
+    
     Button_Roundify_3px.Name = "Button_Roundify_3px"
     Button_Roundify_3px.Parent = Button
     Button_Roundify_3px.Active = true
