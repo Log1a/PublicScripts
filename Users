@@ -1,5 +1,6 @@
 local userids = {
-  "287857245"
+  "287857245",
+  "3003960398"
 }
 
 return userids
