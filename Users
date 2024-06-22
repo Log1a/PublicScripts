@@ -1,6 +1,1 @@
-local userids = {
-  287857245,
-  3003960398
-}
-
-return userids
+return {287857245, 3003960398}
