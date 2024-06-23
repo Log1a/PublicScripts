@@ -592,11 +592,9 @@ function InsideTab:CreateTextbox(labelText, placeholderText, callback)
     TextBox.TextSize = 14.000
     TextBox.ClearTextOnFocus = false -- Set to true if you want the text cleared on focus
     
-    TextBox.FocusLost:Connect(function(enterPressed)
-        if enterPressed then
+    TextBox.FocusLost:Connect(function()
             local enteredText = TextBox.Text
             callback(enteredText)
-        end
     end)
     
     return TextBox
