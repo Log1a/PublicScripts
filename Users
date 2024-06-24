@@ -1,4 +1,6 @@
 local userids = {
+  3003960398,
+  3093842306,
   3321292862
 }
 return {userids}
